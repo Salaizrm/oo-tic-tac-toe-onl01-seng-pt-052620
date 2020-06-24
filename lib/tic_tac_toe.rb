@@ -84,6 +84,7 @@ class TicTacToe
   end
 
   def full?
+    @board.all?{|space| space != " "}
   end
     # index = -1
     # until valid_move?(index)
