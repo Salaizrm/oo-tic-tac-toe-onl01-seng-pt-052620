@@ -92,7 +92,7 @@ class TicTacToe
   end
 
   def over?
-    won? || draw?  
+    won? || draw?
   end
     # index = -1
     # until valid_move?(index)
