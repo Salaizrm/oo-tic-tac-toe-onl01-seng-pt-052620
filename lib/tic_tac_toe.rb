@@ -76,7 +76,12 @@ class TicTacToe
     end
 
     def won?
+      WIN_COMBINATIONS.any? do |combo|
+      if position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
+        return combo
+      end
     end
+  end
     # index = -1
     # until valid_move?(index)
     #   puts "Please make a move by entering a number between 1-9"
