@@ -94,6 +94,12 @@ class TicTacToe
   def over?
     won? || draw?
   end
+
+  def winner
+    if combo = won?
+      @board[combo[0]]
+    end
+  end
     # index = -1
     # until valid_move?(index)
     #   puts "Please make a move by entering a number between 1-9"
