@@ -88,9 +88,7 @@ class TicTacToe
   end
 
   def draw?
-    if full? && won? != false
-      return "cats game!"
-    end
+    full? && !won?
   end
     # index = -1
     # until valid_move?(index)
