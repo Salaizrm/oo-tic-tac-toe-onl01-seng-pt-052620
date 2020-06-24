@@ -90,6 +90,10 @@ class TicTacToe
   def draw?
     full? && !won?
   end
+
+  def over?
+    won? || draw?  
+  end
     # index = -1
     # until valid_move?(index)
     #   puts "Please make a move by entering a number between 1-9"
